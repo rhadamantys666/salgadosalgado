@@ -13,6 +13,7 @@
         <nav>
             <a href="index.html">Mundo</a>
             <a href="#">pessoas conectadas nos apps</a>
+            <h1>No Brasil, o WhatsApp é a rede social mais popular, com cerca de 165 milhões de usuários. O Instagram tem aproximadamente 120 milhões, seguido pelo Facebook com 107 milhões. O TikTok cresce rápido, alcançando 82 milhões, enquanto o Telegram possui cerca de 62 milhões de usuários. Essas plataformas são essenciais na comunicação e entretenimento no país.</h1>
         </nav>
     </header>
     <main class="graficos-section">
@@ -47,3 +48,20 @@
                 labels: ['instagram', 'facebook', 'tiktok', 'whatsapp', 'telegram'],
                 datasets: [{
                     label: 'usuarios conectados',
+                    data: [ 120000000, 107000000,  82000000,  165000000,  62000000 ],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
