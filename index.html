@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vendas</title>
+    <title>apps da internet</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 </head>
@@ -12,7 +12,7 @@
         <h1>Relatório das redes sociais</h1>
         <nav>
             <a href="index.html">Mundo</a>
-            <a href="#">quantidade de venas</a>
+            <a href="#">pessoas conectadas nos apps</a>
         </nav>
     </header>
     <main class="graficos-section">
@@ -36,7 +36,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Gráfico de Vendas</h1>
+    <h1>Gráfico de usuarios</h1>
     <canvas id="meuGrafico" width="400" height="200"></canvas>
 
     <script>
@@ -44,24 +44,6 @@
         const meuGrafico = new Chart(ctx, {
             type: 'bar', // tipo de gráfico
             data: {
-                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+                labels: ['instagram', 'facebook', 'tiktok', 'whatsapp', 'telegram'],
                 datasets: [{
-                    label: 'Vendas',
-                    data: [20, 30, 11, 3, 10
-                    ],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+                    label: 'usuarios conectados',
